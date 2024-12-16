@@ -104,5 +104,10 @@ type Case = [
   Expect<Equal<Implies<true, true>, true>>,
   Expect<Equal<Implies<false, true>, true>>,
   Expect<Equal<Implies<true, false>, false>>,
-  Expect<Equal<Implies<false, false>, true>>
+  Expect<Equal<Implies<false, false>, true>>,
+
+  Expect<Equal<Biconditional<true, true>, true>>,
+  Expect<Equal<Biconditional<false, true>, false>>,
+  Expect<Equal<Biconditional<true, false>, false>>,
+  Expect<Equal<Biconditional<false, false>, true>>
 ];
